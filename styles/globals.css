@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray-600: #121212;
+  --bg-liked-songs: linear-gradient(135deg,#450af5,#c4efd9);
+  --green-100: #1ed760;
+  --green-200: #1db954;
+}
+@font-face{
+  font-family:spotify-circular;
+  src:url(https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.afd9ab26.woff2) format("woff2"),
+  url(https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.2a78c017.woff) format("woff"),
+  url(https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Light.89e4be2e.ttf) format("truetype");
+  font-weight:200;
+  font-style:normal;
+  font-display:swap
+}
+@font-face {
+  font-family:spotify-circular;
+  src:url(https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.3466e0ec.woff2) format("woff2"),
+  url(https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.ea8d19db.woff) format("woff"),
+  url(https://open.scdn.co/cdn/fonts/CircularSpUIv3T-Book.a357677a.ttf) format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+html,
+body {
+  height: 100%;
+  background-color: var(--gray-600);
+  font-family: 'spotify-circular'
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-green-200 {
+  background-color: var(--green-200);
+}
+
+.bg-liked-songs {
+  background-image: var(--bg-liked-songs);
+}
+
+.hover\:border-green-200:hover {
+  border-color: var(--green-200);
+}
+
+.text-2xl {
+  font-size: 1.75rem;
+}
+
+
+.text-green-200 {
+  color: var(--green-200);
+}
